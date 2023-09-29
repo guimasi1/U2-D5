@@ -14,7 +14,7 @@ body {
 
 /* HEADER */
 header {
-  background-color: #ffc017;
+  /* background-color: #ffc017; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +22,57 @@ header {
   color: #191919;
   width: 85%;
   margin: 0 auto;
+  position: sticky;
+}
+
+.scroll-animation {
+  animation: changeColor 1s linear 0s forwards;
+}
+
+.white-color {
+  animation: whiteColor 1s linear 0s forwards;
+}
+
+.back1 {
+  animation: back1 1s linear 0s forwards;
+}
+
+.back2 {
+  animation: back2 1s linear 0s forwards;
+}
+
+.divisor {
+  border-bottom: 0.1px solid black;
+  position: sticky;
+  top: 0;
+  background-color: #ffc017;
+  z-index: 1;
+}
+@keyframes changeColor {
+  0 {
+    background-color: #ffc017;
+  }
+
+  100% {
+    background-color: #fff;
+  }
+}
+
+@keyframes whiteColor {
+  0 {
+    background-color: #191919;
+  }
+  100% {
+    background-color: green;
+  }
+}
+@keyframes back1 {
+  0 {
+    background-color: white;
+  }
+  100% {
+    background-color: #ffc017;
+  }
 }
 
 header svg {
@@ -54,6 +105,7 @@ header li:nth-of-type(5) {
 .bkg-color {
   background-color: #ffc017;
 }
+
 .staycurious {
   background-color: #ffc017;
   height: 40vh;
