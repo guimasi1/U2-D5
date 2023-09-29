@@ -9,5 +9,6 @@ window.addEventListener("scroll", function (e) {
     button.classList.add("white-color");
   } else {
     header.classList.remove("scroll-animation");
+    button.classList.remove("white-color");
   }
 });
